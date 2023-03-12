@@ -12,9 +12,7 @@ import {
 } from './controllers/product-controller.js';
 import { createOrder, getOrders } from './controllers/order-controller.js';
 
-const dbUrl =
-  process.env.DB ||
-  'mongodb+srv://fbnvbv588ufe:6vl6RRcuyXMUukNT@cluster0.okuuchh.mongodb.net/test';
+const dbUrl = process.env.DB;
 
 const storage = multer.diskStorage({
   destination: (_, __, cb) => {
